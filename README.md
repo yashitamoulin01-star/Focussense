@@ -1,5 +1,9 @@
 # 🌿 FocusSense
 
+<p align="center">
+  <img src="public/logo.png" width="180" alt="FocusSense Official Logo">
+</p>
+
 **FocusSense** is a next-generation, ethical productivity sanctuary designed to transform the way we relate to deep work. It moves away from "shame-based" tracking and instead uses gamification, local-first privacy, and AI-driven insights to help you cultivate focus.
 
 ## ✨ Features

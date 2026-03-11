@@ -1013,7 +1013,9 @@ function Sidebar({ currentView, onViewChange, onPairingClick, driftState }) {
     <aside className="sidebar">
       <div className="sidebar-header">
         <div className="sidebar-logo">
-          <div className="sidebar-logo-icon">🎯</div>
+          <div className="sidebar-logo-icon">
+            <img src="/logo.png" alt="FS" style={{ width: '100%', height: '100%', borderRadius: 'inherit' }} />
+          </div>
           <div>
             <h1>FocusSense</h1>
             <span>Mindful Focus</span>
@@ -1271,10 +1273,13 @@ function SettingsView({ onExport, onImport, importPreview, onConfirmImport, onCa
 
   return (
     <div className="fade-in">
-      <div className="page-header">
-        <h2 className="page-title">Settings & Portability</h2>
-        <p className="page-subtitle">Manage your themes and take your focus data with you.</p>
-      </div>
+        <div style={{ display: 'flex', alignItems: 'center', gap: '16px', marginBottom: '8px' }}>
+          <img src="/logo.png" alt="FocusSense" style={{ width: '48px', height: '48px', borderRadius: '12px', border: '1px solid var(--border)' }} />
+          <div>
+            <h2 className="page-title" style={{ margin: 0 }}>Settings & Portability</h2>
+            <p className="page-subtitle" style={{ margin: 0 }}>Manage your themes and take your focus data with you.</p>
+          </div>
+        </div>
 
       <div className="settings-grid">
         {/* Workspace Status */}

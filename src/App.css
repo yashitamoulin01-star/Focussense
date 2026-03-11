@@ -145,14 +145,15 @@ select option {
 }
 
 .sidebar-logo-icon {
-  width: 36px;
-  height: 36px;
-  background: var(--gradient);
+  width: 40px;
+  height: 40px;
+  background: #fdfaf7; /* Matches the delicate off-white background */
   border-radius: var(--radius-md);
+  border: 1px solid var(--border);
+  padding: 4px;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 18px;
   box-shadow: var(--shadow);
 }
 
