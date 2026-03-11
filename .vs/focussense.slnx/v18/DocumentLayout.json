@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Naresh\\.gemini\\antigravity\\scratch\\focussense\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Naresh\\.gemini\\antigravity\\scratch\\focussense\\public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\vite.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Naresh\\.gemini\\antigravity\\scratch\\focussense\\public\\tauri.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:public\\tauri.svg||{FA3CD31E-987B-443A-9B81-186104E8DAC1}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "vite.svg",
+              "DocumentMoniker": "C:\\Users\\Naresh\\.gemini\\antigravity\\scratch\\focussense\\public\\vite.svg",
+              "RelativeDocumentMoniker": "public\\vite.svg",
+              "ToolTip": "C:\\Users\\Naresh\\.gemini\\antigravity\\scratch\\focussense\\public\\vite.svg",
+              "RelativeToolTip": "public\\vite.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-02T20:38:31.64Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "tauri.svg",
+              "DocumentMoniker": "C:\\Users\\Naresh\\.gemini\\antigravity\\scratch\\focussense\\public\\tauri.svg",
+              "RelativeDocumentMoniker": "public\\tauri.svg",
+              "ToolTip": "C:\\Users\\Naresh\\.gemini\\antigravity\\scratch\\focussense\\public\\tauri.svg",
+              "RelativeToolTip": "public\\tauri.svg",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2026-03-02T20:38:21.508Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

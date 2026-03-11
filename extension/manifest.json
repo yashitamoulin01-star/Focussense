@@ -1,0 +1,30 @@
+{
+    "manifest_version": 3,
+    "name": "FocusSense Activity Bridge",
+    "version": "1.0.0",
+    "description": "Secure, local-only bridge reporting active tabs and idle states to FocusSense.",
+    "permissions": [
+        "tabs",
+        "idle",
+        "storage"
+    ],
+    "host_permissions": [
+        "http://127.0.0.1:8765/*",
+        "http://localhost:8765/*"
+    ],
+    "background": {
+        "service_worker": "background.js",
+        "type": "module"
+    },
+    "action": {
+        "default_popup": "popup.html",
+        "default_icon": {
+            "16": "icon16.png",
+            "48": "icon48.png",
+            "128": "icon128.png"
+        }
+    },
+    "content_security_policy": {
+        "extension_pages": "script-src 'self'; object-src 'self'; connect-src ws://127.0.0.1:8765 ws://localhost:8765 http://127.0.0.1:8765 http://localhost:8765"
+    }
+}

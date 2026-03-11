@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>FocusSense</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      width: 280px;
+      background: #0f1117;
+      color: #e2e8f0;
+    }
+
+    .header {
+      background: linear-gradient(135deg, #1a1f2e, #12161f);
+      padding: 18px 20px 14px;
+      border-bottom: 1px solid #1e2435;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .logo {
+      width: 32px;
+      height: 32px;
+      background: linear-gradient(135deg, #6366f1, #818cf8);
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 16px;
+      flex-shrink: 0;
+    }
+
+    .header-text h2 {
+      font-size: 14px;
+      font-weight: 700;
+      color: #e2e8f0;
+    }
+
+    .header-text p {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 1px;
+    }
+
+    .body {
+      padding: 16px 20px 20px;
+    }
+
+    /* ── Status Pill ── */
+    .status-card {
+      background: #1a1f2e;
+      border: 1px solid #1e2435;
+      border-radius: 12px;
+      padding: 14px 16px;
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 14px;
+    }
+
+    .dot {
+      width: 11px;
+      height: 11px;
+      border-radius: 50%;
+      flex-shrink: 0;
+      transition: background 0.3s;
+    }
+
+    .dot.connected    { background: #22c55e; box-shadow: 0 0 8px #22c55e88; }
+    .dot.connecting   { background: #f59e0b; animation: pulse 1.2s infinite; }
+    .dot.disconnected { background: #ef4444; }
+
+    @keyframes pulse {
+      0%, 100% { opacity: 1; }
+      50% { opacity: 0.3; }
+    }
+
+    .status-text .label {
+      font-size: 13px;
+      font-weight: 600;
+    }
+
+    .status-text .sub {
+      font-size: 11px;
+      color: #64748b;
+      margin-top: 2px;
+    }
+
+    /* ── Buttons ── */
+    .btn {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 13px;
+      font-weight: 600;
+      transition: all 0.15s;
+    }
+
+    .btn-connect {
+      background: linear-gradient(135deg, #6366f1, #818cf8);
+      color: #fff;
+    }
+
+    .btn-connect:hover { filter: brightness(1.1); transform: translateY(-1px); }
+    .btn-connect:active { filter: brightness(0.9); transform: none; }
+    .btn-connect:disabled { opacity: 0.5; cursor: not-allowed; transform: none; }
+
+    .btn-disconnect {
+      background: #1e2435;
+      color: #94a3b8;
+      border: 1px solid #2a3042;
+      margin-top: 8px;
+    }
+
+    .btn-disconnect:hover { background: #262d40; color: #e2e8f0; }
+
+    /* ── Site tracker ── */
+    .live-site {
+      background: #1a1f2e;
+      border: 1px solid #1e2435;
+      border-radius: 8px;
+      padding: 10px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .live-site .site-icon { font-size: 14px; }
+
+    .live-site .site-text {
+      flex: 1;
+      min-width: 0;
+    }
+
+    .live-site .site-label {
+      font-size: 10px;
+      color: #64748b;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .live-site .site-domain {
+      font-size: 12px;
+      font-weight: 600;
+      color: #e2e8f0;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .focus-badge {
+      font-size: 10px;
+      font-weight: 700;
+      padding: 2px 7px;
+      border-radius: 20px;
+      flex-shrink: 0;
+    }
+
+    .focus-badge.focused    { background: #14532d; color: #4ade80; }
+    .focus-badge.distracted { background: #7f1d1d; color: #f87171; }
+
+    /* ── Footer ── */
+    .footer {
+      padding: 10px 20px 14px;
+      border-top: 1px solid #1e2435;
+      text-align: center;
+      font-size: 10px;
+      color: #374151;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="header">
+    <div class="logo">🎯</div>
+    <div class="header-text">
+      <h2>FocusSense</h2>
+      <p>Activity Bridge</p>
+    </div>
+  </div>
+
+  <div class="body">
+
+    <div class="status-card">
+      <div class="dot disconnected" id="dot"></div>
+      <div class="status-text">
+        <div class="label" id="statusLabel">Not Connected</div>
+        <div class="sub" id="statusSub">FocusSense app not detected</div>
+      </div>
+    </div>
+
+    <button class="btn btn-connect" id="connectBtn">⚡ Connect to FocusSense</button>
+    <button class="btn btn-disconnect" id="disconnectBtn" style="display:none">Disconnect</button>
+
+    <div class="live-site" id="liveSite" style="display:none">
+      <span class="site-icon">🌐</span>
+      <div class="site-text">
+        <div class="site-label">Active Tab</div>
+        <div class="site-domain" id="siteDomain">—</div>
+      </div>
+      <span class="focus-badge focused" id="focusBadge">Focused</span>
+    </div>
+
+  </div>
+
+  <div class="footer">🔒 Local only · No cloud sync · No keylogging</div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

@@ -1,0 +1,135 @@
+// FocusSense Theme Definitions
+export const themes = {
+    deep: {
+        name: 'Deep',
+        description: 'Dark Navy',
+        icon: '🌊',
+        vars: {
+            '--bg-primary': 'hsl(220, 30%, 8%)',
+            '--bg-secondary': 'hsl(220, 25%, 12%)',
+            '--bg-card': 'hsl(220, 25%, 14%)',
+            '--bg-card-hover': 'hsl(220, 25%, 18%)',
+            '--bg-surface': 'hsl(220, 28%, 11%)',
+            '--text-primary': 'hsl(220, 20%, 92%)',
+            '--text-secondary': 'hsl(220, 15%, 65%)',
+            '--text-muted': 'hsl(220, 10%, 45%)',
+            '--accent': 'hsl(220, 70%, 55%)',
+            '--accent-light': 'hsl(220, 40%, 25%)',
+            '--accent-glow': 'hsla(220, 70%, 55%, 0.15)',
+            '--border': 'hsl(220, 20%, 20%)',
+            '--border-light': 'hsl(220, 18%, 16%)',
+            '--positive': 'hsl(150, 50%, 50%)',
+            '--negative': 'hsl(0, 55%, 55%)',
+            '--warning': 'hsl(35, 80%, 55%)',
+            '--shadow': '0 2px 16px hsla(220, 50%, 5%, 0.3)',
+            '--shadow-lg': '0 8px 32px hsla(220, 50%, 5%, 0.5)',
+            '--glass': 'hsla(220, 25%, 14%, 0.8)',
+            '--gradient': 'linear-gradient(135deg, hsl(220, 60%, 50%) 0%, hsl(260, 50%, 45%) 100%)',
+        },
+    },
+    blossom: {
+        name: 'Blossom',
+        description: 'Pastel Pink',
+        icon: '🌸',
+        vars: {
+            '--bg-primary': 'hsl(340, 30%, 96%)',
+            '--bg-secondary': 'hsl(340, 25%, 92%)',
+            '--bg-card': 'hsl(340, 20%, 98%)',
+            '--bg-card-hover': 'hsl(340, 25%, 95%)',
+            '--bg-surface': 'hsl(0, 0%, 100%)',
+            '--text-primary': '#1a1a2e',
+            '--text-secondary': '#333333',
+            '--text-muted': '#666666',
+            '--accent': 'hsl(340, 75%, 45%)',
+            '--accent-light': 'hsl(340, 50%, 85%)',
+            '--accent-glow': 'hsla(340, 65%, 45%, 0.15)',
+            '--border': 'hsl(340, 25%, 82%)',
+            '--border-light': 'hsl(340, 20%, 88%)',
+            '--positive': 'hsl(150, 50%, 35%)',
+            '--negative': 'hsl(0, 55%, 50%)',
+            '--warning': 'hsl(35, 80%, 45%)',
+            '--shadow': '0 2px 16px hsla(340, 40%, 40%, 0.1)',
+            '--shadow-lg': '0 8px 32px hsla(340, 40%, 40%, 0.15)',
+            '--glass': 'hsla(340, 20%, 98%, 0.7)',
+            '--gradient': 'linear-gradient(135deg, hsl(340, 60%, 65%) 0%, hsl(300, 50%, 60%) 100%)',
+        },
+    },
+    'white-pro': {
+        name: 'White Pro',
+        description: 'Clean, Professional',
+        icon: '⬜',
+        vars: {
+            '--bg-primary': 'hsl(0, 0%, 98%)',
+            '--bg-secondary': 'hsl(220, 10%, 94%)',
+            '--bg-card': 'hsl(0, 0%, 100%)',
+            '--bg-card-hover': 'hsl(220, 10%, 97%)',
+            '--bg-surface': 'hsl(0, 0%, 100%)',
+            '--text-primary': '#1a1a2e',
+            '--text-secondary': '#333333',
+            '--text-muted': '#666666',
+            '--accent': 'hsl(220, 55%, 50%)',
+            '--accent-light': 'hsl(220, 30%, 90%)',
+            '--accent-glow': 'hsla(220, 55%, 50%, 0.08)',
+            '--border': 'hsl(220, 10%, 88%)',
+            '--border-light': 'hsl(220, 8%, 93%)',
+            '--positive': 'hsl(150, 45%, 40%)',
+            '--negative': 'hsl(0, 55%, 50%)',
+            '--warning': 'hsl(35, 80%, 48%)',
+            '--shadow': '0 2px 16px hsla(220, 15%, 50%, 0.06)',
+            '--shadow-lg': '0 8px 32px hsla(220, 15%, 50%, 0.1)',
+            '--glass': 'hsla(0, 0%, 100%, 0.85)',
+            '--gradient': 'linear-gradient(135deg, hsl(220, 50%, 55%) 0%, hsl(200, 60%, 50%) 100%)',
+        },
+    },
+    neon: {
+        name: 'Neon',
+        description: 'Gaming',
+        icon: '⚡',
+        vars: {
+            '--bg-primary': 'hsl(260, 40%, 6%)',
+            '--bg-secondary': 'hsl(260, 35%, 10%)',
+            '--bg-card': 'hsl(260, 35%, 12%)',
+            '--bg-card-hover': 'hsl(260, 35%, 16%)',
+            '--bg-surface': 'hsl(260, 38%, 9%)',
+            '--text-primary': 'hsl(0, 0%, 100%)',
+            '--text-secondary': 'hsl(260, 10%, 70%)',
+            '--text-muted': 'hsl(260, 10%, 50%)',
+            '--accent': 'hsl(320, 100%, 60%)',
+            '--accent-light': 'hsl(320, 100%, 30%)',
+            '--accent-glow': 'hsla(320, 100%, 60%, 0.25)',
+            '--border': 'hsl(260, 30%, 20%)',
+            '--border-light': 'hsl(260, 30%, 25%)',
+            '--positive': 'hsl(140, 100%, 50%)',
+            '--negative': 'hsl(0, 100%, 60%)',
+            '--warning': 'hsl(40, 100%, 55%)',
+            '--shadow': '0 4px 20px hsla(320, 100%, 60%, 0.15)',
+            '--shadow-lg': '0 8px 40px hsla(320, 100%, 60%, 0.3)',
+            '--glass': 'hsla(260, 35%, 12%, 0.8)',
+            '--gradient': 'linear-gradient(135deg, hsl(320, 100%, 60%) 0%, hsl(280, 100%, 60%) 100%)',
+        },
+    },
+};
+
+export const WORK_MODES = [
+    { id: 'coding', name: 'Coding', icon: '💻' },
+    { id: 'reading', name: 'Reading', icon: '📖' },
+    { id: 'assignment', name: 'Assignment', icon: '📝' },
+    { id: 'working', name: 'Working', icon: '💼' },
+    { id: 'gaming', name: 'Gaming', icon: '🎮' },
+    { id: 'custom', name: 'Custom', icon: '⚙️' },
+];
+
+export const TIMER_TYPES = [
+    { id: 'standard', name: 'Standard Timer', icon: '⏱️' },
+    { id: 'open', name: 'Open Session', icon: '♾️' },
+    { id: 'garden', name: 'Garden Mode', icon: '🌱' },
+];
+
+export function applyTheme(themeId) {
+    const theme = themes[themeId];
+    if (!theme) return;
+    const root = document.documentElement;
+    Object.entries(theme.vars).forEach(([key, value]) => {
+        root.style.setProperty(key, value);
+    });
+}

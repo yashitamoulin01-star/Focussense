@@ -1,0 +1,132 @@
+.farm-overlay-container {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 24px;
+}
+
+.pointer-events-none {
+    pointer-events: none;
+}
+
+.pointer-events-auto {
+    pointer-events: auto;
+}
+
+.farm-hud {
+    display: flex;
+    gap: 16px;
+    align-items: flex-start;
+}
+
+.hud-stat {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 8px 16px;
+    border-radius: 12px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(12px);
+    background: var(--glass);
+}
+
+.hud-stat.hud-active {
+    border-color: var(--positive);
+    box-shadow: 0 0 12px hsla(150, 50%, 40%, 0.2);
+}
+
+.hud-stat.hud-drifting {
+    border-color: var(--warning);
+    box-shadow: 0 0 12px hsla(35, 80%, 50%, 0.2);
+}
+
+.hud-icon {
+    font-size: 20px;
+}
+
+.hud-val-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.hud-val {
+    font-weight: 700;
+    font-size: 16px;
+    color: var(--text-primary);
+    line-height: 1.2;
+}
+
+.hud-lbl {
+    font-size: 11px;
+    color: var(--text-secondary);
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+}
+
+.farm-controls {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    display: flex;
+    gap: 8px;
+}
+
+.farm-selection-pane {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: var(--shadow-lg);
+    width: 320px;
+    margin-top: auto;
+    margin-left: auto;
+    margin-right: auto;
+    backdrop-filter: blur(12px);
+    background: var(--glass);
+}
+
+.selection-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.btn-icon {
+    background: transparent;
+    border: none;
+    color: var(--text-muted);
+    font-size: 16px;
+    cursor: pointer;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.btn-icon:hover {
+    color: var(--text-primary);
+    background: var(--bg-secondary);
+}
+
+.slide-up {
+    animation: slideUp 0.3s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
