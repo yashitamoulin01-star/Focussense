@@ -2,19 +2,6 @@ import React, { Suspense, lazy, useState, useEffect, useMemo, useCallback } from
 
 import './App.css';
 
-// ─── Utility Functions ────────────────────────────────────────────────────────
-
-function formatDuration(ms) {
-    if (!ms || ms <= 0) return '0s';
-    const totalSec = Math.floor(ms / 1000);
-    const h = Math.floor(totalSec / 3600);
-    const m = Math.floor((totalSec % 3600) / 60);
-    const s = totalSec % 60;
-    if (h > 0) return `${h}h ${m}m`;
-    if (m > 0) return `${m}m ${s}s`;
-    return `${s}s`;
-}
-
 import { createSessionManager } from './engine/session/sessionManager.js';
 import { createDriftDetector } from './engine/session/driftDetector.js';
 import { analyzeSession, getWeeklyStats, getDeepWorkPredictors } from './engine/session/stabilityAnalyzer.js';
@@ -51,6 +38,19 @@ const HistoryView = lazy(() => import('./ui/dashboard/HistoryView.jsx'));
 const AnalyticsView = lazy(() => import('./ui/dashboard/AnalyticsView.jsx'));
 const SessionCompletedModal = lazy(() => import('./ui/dashboard/SessionCompletedModal.jsx'));
 
+
+// ─── Utility Functions ────────────────────────────────────────────────────────
+
+function formatDuration(ms) {
+    if (!ms || ms <= 0) return '0s';
+    const totalSec = Math.floor(ms / 1000);
+    const h = Math.floor(totalSec / 3600);
+    const m = Math.floor((totalSec % 3600) / 60);
+    const s = totalSec % 60;
+    if (h > 0) return `${h}h ${m}m`;
+    if (m > 0) return `${m}m ${s}s`;
+    return `${s}s`;
+}
 
 // Singleton instances
 const sessionManager = createSessionManager();
@@ -1269,7 +1269,7 @@ function SettingsView({ onExport, onImport, importPreview, onConfirmImport, onCa
   const [exportFormat, setExportFormat] = React.useState('json');
   const [mergeStrategy, setMergeStrategy] = React.useState('merge');
   const [confirmClearData, setConfirmClearData] = React.useState(false);
-  const summary = React.useMemo(() => getDataSummary());
+  const summary = React.useMemo(() => getDataSummary(), []);
 
   return (
     <div className="fade-in">
