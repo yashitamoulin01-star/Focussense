@@ -333,7 +333,7 @@ async def main() -> None:
         print("[Agent] WARNING: No token — running without auth enforcement.", flush=True)
 
     try:
-        async with websockets.serve(handle_connection, "localhost", PORT):
+        async with websockets.serve(handle_connection, "127.0.0.1", PORT):
             print(f"[Agent] Listening on ws://localhost:{PORT}", flush=True)
             print("[Agent] Press Ctrl+C to stop.\n", flush=True)
             await asyncio.Future()  # run forever

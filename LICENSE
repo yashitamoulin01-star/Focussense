@@ -1,0 +1,149 @@
+FOCUSSENSE PROPRIETARY SOFTWARE LICENSE
+Copyright (c) 2026 Yashita Moulin. All Rights Reserved.
+
+================================================================================
+                        PROPRIETARY AND CONFIDENTIAL
+================================================================================
+
+This software, "FocusSense," including all source code, design, architecture,
+algorithms, assets, documentation, and associated materials (collectively, the
+"Software"), is the exclusive intellectual property of Yashita Moulin
+("Owner"). This License governs all access to and use of the Software.
+
+By accessing, downloading, cloning, or using the Software in any form, you
+("User") agree to be bound by the terms of this License. If you do not agree,
+you must immediately cease all access to and use of the Software.
+
+--------------------------------------------------------------------------------
+SECTION 1 — PERMITTED USE
+--------------------------------------------------------------------------------
+
+Subject to full compliance with this License, the Owner grants you a limited,
+non-exclusive, non-transferable, revocable license solely for the following:
+
+  1.1  VIEWING SOURCE CODE: You may view the source code hosted on the
+       official public repository for personal reference or educational
+       inspection only.
+
+  1.2  PERSONAL USE OF THE BINARY: You may download and run the compiled
+       application binary (the installer/executable) for your own personal,
+       non-commercial productivity use.
+
+No other rights are granted. All rights not expressly granted herein are
+reserved by the Owner.
+
+--------------------------------------------------------------------------------
+SECTION 2 — PROHIBITED ACTIONS
+--------------------------------------------------------------------------------
+
+The following actions are STRICTLY PROHIBITED without express prior written
+consent from the Owner:
+
+  2.1  COPYING & REPRODUCTION: You may NOT copy, reproduce, mirror, archive,
+       scrape, or duplicate any portion of the source code, assets, UI designs,
+       or documentation.
+
+  2.2  MODIFICATION: You may NOT modify, alter, adapt, translate, or create
+       derivative works of the Software or any portion thereof.
+
+  2.3  REDISTRIBUTION: You may NOT distribute, publish, upload, share,
+       sublicense, sell, rent, lease, lend, or otherwise transfer the Software
+       or any portion thereof to any third party.
+
+  2.4  IDEA & CONCEPT APPROPRIATION: You may NOT extract, replicate, reverse-
+       engineer, or repurpose the underlying concepts, ideas, algorithms,
+       gamification mechanics, user experience design, architecture, or data
+       models of the Software to build any competing or derivative product,
+       whether commercial or non-commercial.
+
+  2.5  OWNERSHIP MISREPRESENTATION: You may NOT claim authorship, ownership,
+       or co-ownership of the Software, its name ("FocusSense"), its branding,
+       its design, or any component thereof.
+
+  2.6  REVERSE ENGINEERING: You may NOT decompile, disassemble, or otherwise
+       attempt to derive the source code or internal logic from the compiled
+       binary for any competitive or unauthorized purpose.
+
+  2.7  COMMERCIAL USE: You may NOT use the Software, its code, its design, or
+       its concepts for any commercial purpose without a separate, explicit
+       written agreement with the Owner.
+
+  2.8  DATA PUBLICATION: You may NOT publish, share, or commercialize any
+       data, metrics, outputs, or insights derived from the Software that
+       could represent or misrepresent the Software's intellectual content.
+
+  2.9  REMOVAL OF NOTICES: You may NOT remove, obscure, or alter any
+       copyright, trademark, or proprietary notices contained in the Software.
+
+--------------------------------------------------------------------------------
+SECTION 3 — INTELLECTUAL PROPERTY
+--------------------------------------------------------------------------------
+
+The Software and all copies thereof are proprietary to the Owner and title
+thereto remains in the Owner. All rights in the Software not specifically
+granted in this License are reserved to the Owner.
+
+The name "FocusSense," its logo, and all related marks are the exclusive
+property of Yashita Moulin and may not be used without written permission.
+
+--------------------------------------------------------------------------------
+SECTION 4 — ENFORCEMENT & LEGAL ACTION
+--------------------------------------------------------------------------------
+
+Any unauthorized use, reproduction, distribution, or misappropriation of the
+Software or its underlying ideas constitutes a material breach of this License
+and an infringement of the Owner's intellectual property rights.
+
+The Owner reserves the right to seek all remedies available under applicable
+law, including but not limited to:
+
+  — Injunctive relief to prevent further violation
+  — Monetary damages, including statutory damages
+  — Recovery of legal fees and costs
+  — Criminal prosecution where applicable
+
+The Owner may enforce these rights against any individual, organization, or
+entity found to be in violation, regardless of jurisdiction.
+
+--------------------------------------------------------------------------------
+SECTION 5 — DISCLAIMER OF WARRANTIES
+--------------------------------------------------------------------------------
+
+THE SOFTWARE IS PROVIDED "AS IS," WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO WARRANTIES OF MERCHANTABILITY, FITNESS
+FOR A PARTICULAR PURPOSE, AND NON-INFRINGEMENT. THE OWNER MAKES NO GUARANTEE
+THAT THE SOFTWARE WILL BE ERROR-FREE OR UNINTERRUPTED.
+
+--------------------------------------------------------------------------------
+SECTION 6 — LIMITATION OF LIABILITY
+--------------------------------------------------------------------------------
+
+TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE OWNER SHALL NOT BE LIABLE FOR
+ANY INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES ARISING
+FROM THE USE OR INABILITY TO USE THE SOFTWARE, EVEN IF THE OWNER HAS BEEN
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES.
+
+--------------------------------------------------------------------------------
+SECTION 7 — TERMINATION
+--------------------------------------------------------------------------------
+
+This License is effective until terminated. Your rights under this License will
+terminate automatically and without notice if you fail to comply with any of
+its terms. Upon termination, you must immediately destroy all copies of the
+Software in your possession.
+
+--------------------------------------------------------------------------------
+SECTION 8 — GOVERNING LAW
+--------------------------------------------------------------------------------
+
+This License shall be governed by and construed in accordance with applicable
+intellectual property and contract law. Any disputes arising under this License
+shall be subject to the exclusive jurisdiction of the courts of competent
+authority in the Owner's jurisdiction.
+
+--------------------------------------------------------------------------------
+
+For licensing inquiries, permissions, or to report violations, contact the
+Owner through the official repository.
+
+© 2026 Yashita Moulin — All Rights Reserved.

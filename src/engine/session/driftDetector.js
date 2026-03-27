@@ -472,6 +472,7 @@ export function createDriftDetector() {
             lastActivityAt: Date.now(),
             lastFocusLostAt: null,
             isRelayConnected: state.isRelayConnected, // PRESERVE connection state on reset
+            relayStatus: state.relayStatus, // PRESERVE status string on reset
         };
         currentRules = {};
         notify();
